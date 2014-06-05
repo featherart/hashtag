@@ -7,8 +7,8 @@ gem 'twitter'
 gem 'figaro'
 
 group :development, :test do
-  gem 'rspec-rails'
-  gem 'capybara'
+  gem 'rspec-rails', '2.14.2'
+  gem 'capybara', '1.1.4'
   gem 'pry-rails'
 end
 
