@@ -3,10 +3,13 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.14'
 gem 'sqlite3'
 gem 'high_voltage'
+gem 'twitter'
+gem 'figaro'
 
 group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
+  gem 'pry-rails'
 end
 
 
