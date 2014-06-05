@@ -5,8 +5,8 @@ class SearchesController < ApplicationController
   end
 
   def show
+    # this worked with the previous version of Twitter gem
     #@tweets = Twitter.search("##{params[:id]}").results
     @tweets = Tweets.search("##{params[:id]}")
-    binding.pry
   end
 end
