@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.14'
-
 gem 'sqlite3'
+gem 'high_voltage'
 
 group :development, :test do
   gem 'rspec-rails'
