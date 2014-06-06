@@ -1,8 +1,12 @@
 require 'spec_helper'
 
-describe 'Searcher', '#results' do
+describe Searcher, '#results' do
   it 'returns results from a twitter search' do
     searcher = Searcher.new('awesome search')
     expect(searcher.results).to eq 15
   end
+end
+
+describe Searcher, 'using a custom searcher' do
+
 end
