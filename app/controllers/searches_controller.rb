@@ -7,6 +7,11 @@ class SearchesController < ApplicationController
   def show
     # this worked with the previous version of Twitter gem
     #@tweets = Twitter.search("##{params[:id]}").results
+    #
+    # tests fail with the line below b/c it's returning a fixnum now
+    #@tweets = Searcher.new("##{params[:id]}").results
+
     @tweets = Tweets.search("##{params[:id]}")
+
   end
 end
