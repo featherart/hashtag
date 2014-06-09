@@ -14,4 +14,8 @@ class Tweets
     def self.search(search_term)
       @client.search(search_term).take(15)
     end
+
+    def self.results(search_term)
+      @client.search(search_term).take(15)
+    end
 end
